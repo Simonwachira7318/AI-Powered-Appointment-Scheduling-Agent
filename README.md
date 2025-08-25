@@ -54,8 +54,8 @@ cd server
 pip install -r requirements.txt
 
 # Set environment variables
-export GEMINI_API_KEY="your_gemini_api_key"
-export GOOGLE_CALENDAR_CREDENTIALS="path_to_credentials.json"
+export GEMINI_API_KEY="api_key"
+export GOOGLE_CALENDAR_CREDENTIALS="path to credentials.json"
 export DATABASE_URL="postgresql://username:password@localhost/scheduler_db"
 
 # Initialize database
@@ -70,7 +70,7 @@ python main.py
 Create a `.env` file in the server directory:
 
 ```
-GEMINI_API_KEY=your_gemini_api_key_here
+GEMINI_API_KEY=gemini_api_key
 GOOGLE_CALENDAR_CREDENTIALS=./credentials.json
 DATABASE_URL=postgresql://username:password@localhost/scheduler_db
 FLASK_ENV=development
